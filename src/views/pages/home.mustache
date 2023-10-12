@@ -1,0 +1,17 @@
+<html lang="en">
+  <body>
+    <h1>Bloco de notas</h1>
+    <form action='/nova-nota' method='post'>
+      <h2>Crie uma nova nota</h2>
+      <input  name='title' placeholder='Digite o titúlo da nota'/><br/><br/>
+      <textarea cols='40' rows='12' name='content' placeholder='Digite o conteudo da nota'></textarea></br></br>
+      <input type='submit' value='Criar nota'>
+    </form>
+    {{#notes}}
+      <section>
+      <h3>{{title}}</h3>
+      <p>{{content}}</p>
+      </section>
+    {{/notes}}
+  <body>
+</html>
